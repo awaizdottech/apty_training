@@ -27,7 +27,12 @@
           <tr>
             <td>
               <label for="workEmail"> Work email<sup>*</sup></label>
-              <input type="email" id="workEmail" required />
+              <input
+                type="email"
+                id="workEmail"
+                required
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
             </td>
           </tr>
 
@@ -47,8 +52,17 @@
               <label for="inquiryType">Inquiry type<sup>*</sup></label>
               <input type="text" id="inquiryType" required />
             </td>
+            <td>
+              <input type="date" placeholder="date here only" />
+            </td>
+            <td>
+              <input type="tel" placeholder="tel here only" />
+            </td>
+            <td>
+              <input type="number" placeholder="number here only" />
+            </td>
           </tr>
-          
+
           <tr>
             <td>
               <button type="submit">Submit</button>
